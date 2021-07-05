@@ -241,7 +241,7 @@ def main():
                 if ((event.button == 1)):
                     global s
                     if(size>2):
-                        s = size-1
+                        s = size-2
                         size_list.pop(0)
                         while(len(size_list)<1):
                             size_list.append(s)
@@ -251,7 +251,7 @@ def main():
             if (event.type == pygame.MOUSEBUTTONDOWN):
                 if ((event.button == 1)):
                     if(size<10):
-                        s = size+1
+                        s = size+2
                         size_list.pop(0)
                         while(len(size_list)<1):
                             size_list.append(s)
